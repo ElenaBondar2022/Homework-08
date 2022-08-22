@@ -1,0 +1,17 @@
+header {
+  position: fixed;
+  width: 100%;
+  background: var(--background-color);
+  top: 0;
+  left: 0;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+
+  z-index: 9;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}

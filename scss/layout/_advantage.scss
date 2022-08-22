@@ -1,0 +1,39 @@
+.hidden-title {
+  display: none;
+}
+
+.advantage__list {
+  display: flex;
+& :not(:last-child) {
+  margin-right: 30px;
+}
+}
+
+.advantage__item {
+  width: calc((100% - 90px) / 4);
+}
+
+.skills__box {
+  display: flex;
+  background: var(--grey-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantage-name {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.advantage-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--basic-color);
+}
