@@ -18,7 +18,14 @@
 
     <header class="page-header">
         <div class="container header">
-            <a href="./index.html" class="logo"><span class="logo-item">Web</span>Studio</a>
+            <a href="./index.html" class="logo"><span class="logo-item">Web</span>Studio</a> 
+
+            <button class="menu-btn" data-menu-open>
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#menu"></use>
+                </svg>
+            </button>
+
             <nav class="page-header__nav">
                 <ul class="nav">          
                     <li class="nav__item">
@@ -185,19 +192,46 @@
                 <h2 class="work-title">Чем мы занимаемся</h2>
                 <ul class="work__list">
                     <li class="work__item">
-                        <img src="images/kod.jpg" Alt="Программист набирает текст" width="370">
+
+                        <img
+                            srcset="
+                                ./images/desktop/box-1-1200@1x.jpeg 1x,
+                                ./images/desktop/box-1-1200@2x.jpeg 2x"
+                            src="./images/desktop/box-1-1200@1x.jpeg"
+                            alt="Программист набирает текст"
+                            width="370"
+                        >
+
                         <div class="work__box">
                             <p class="work__text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                         </div>
                     </li>
                     <li class="work__item">
-                        <img src="images/klava.jpg" Alt="Макеты телефонов" width="370">
+
+                        <img
+                            srcset="
+                                ./images/desktop/box-2-1200@1x.jpeg 1x,
+                                ./images/desktop/box-2-1200@2x.jpeg 2x"
+                            src="./images/desktop/box-2-1200@1x.jpeg"
+                            alt="Макеты телефонов"
+                            width="370"
+                        >
+
                         <div class="work__box">
                             <p class="work__text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                         </div>
                     </li>
                     <li class="work__item">
-                        <img src="images/ris.jpg" Alt="Выбор цвета дизайнером" width="370">
+
+                        <img
+                            srcset="
+                                ./images/desktop/box-3-1200@1x.jpeg 1x,
+                                ./images/desktop/box-3-1200@2x.jpeg 2x"
+                            src="./images/desktop/box-3-1200@1x.jpeg"
+                            alt="Выбор цвета дизайнером"
+                            width="370"
+                        >
+
                         <div class="work__box">
                             <p class="work__text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ </p>
                         </div>
@@ -213,7 +247,26 @@
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img src="images/men.jpg" Alt="Дизайнер" width="270">
+
+                        <picture>
+                            <source srcset="
+                                        ./images/mobile/team-1-480@1x.jpeg 1x,
+                                        ./images/mobile/team-1-480@2x.jpeg 2x"
+                                    media="(max-width: 767px)">
+                            <source srcset="
+                                        ./images/tablet/team-1-768@1x.jpeg 1x,
+                                        ./images/tablet/team-1-768@2x.jpeg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                            <source srcset="
+                                        ./images/desktop/team-1-1200@1x.jpeg 1x,
+                                        ./images/desktop/team-1-1200@2x.jpeg 2x"
+                                    media="(min-width: 1200px)">
+
+                            <img src="./images/mobile/team-1-480@1x.jpeg"
+                                 alt="Дизайнер"
+                                 width="270">
+                        </picture>
+
                         <h4 class="team__name">Игорь Демьяненко</h4>
                         <p class="team__position">Product Designer</p>
                         <ul class="networks">
@@ -249,7 +302,26 @@
 
                     </li>
                     <li class="team__item">
-                        <img src="images/jen.jpg" Alt="Фронтенд разработчик" width="270">
+
+                        <picture>
+                            <source srcset="
+                                        ./images/mobile/team-2-480@1x.jpeg 1x,
+                                        ./images/mobile/team-2-480@2x.jpeg 2x"
+                                    media="(max-width: 767px)">
+                            <source srcset="
+                                        ./images/tablet/team-2-768@1x.jpeg 1x,
+                                        ./images/tablet/team-2-768@2x.jpeg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                            <source srcset="
+                                        ./images/desktop/team-2-1200@1x.jpeg 1x,
+                                        ./images/desktop/team-2-1200@2x.jpeg 2x"
+                                    media="(min-width: 1200px)">
+
+                            <img src="./images/mobile/team-2-480@1x.jpeg"
+                                 alt="Фронтенд разработчик"
+                                 width="270">
+                        </picture>
+                        
                         <h4 class="team__name">Ольга Репина</h4>
                         <p class="team__position">Frontend Developer</p>
                         <ul class="networks">
@@ -284,7 +356,26 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="images/mun.jpg" Alt="Маркетолог" width="270">
+
+                        <picture>
+                            <source srcset="
+                                        ./images/mobile/team-3-480@1x.jpeg 1x,
+                                        ./images/mobile/team-3-480@2x.jpeg 2x"
+                                    media="(max-width: 767px)">
+                            <source srcset="
+                                        ./images/tablet/team-3-768@1x.jpeg 1x,
+                                        ./images/tablet/team-3-768@2x.jpeg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                            <source srcset="
+                                        ./images/desktop/team-3-1200@1x.jpeg 1x,
+                                        ./images/desktop/team-3-1200@2x.jpeg 2x"
+                                    media="(min-width: 1200px)">
+
+                            <img src="./images/mobile/team-3-480@1x.jpeg"
+                                 alt="Маркетолог"
+                                 width="270">
+                        </picture>
+
                         <h4 class="team__name">Николай Тарасов</h4>
                         <p class="team__position">Marketing</p>
                         <ul class="networks">
@@ -319,7 +410,26 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="images/end.jpg" Alt="Дизайнер интерфейса" width="270">
+
+                        <picture>
+                            <source srcset="
+                                        ./images/mobile/team-4-480@1x.jpeg 1x,
+                                        ./images/mobile/team-4-480@2x.jpeg 2x"
+                                    media="(max-width: 767px)">
+                            <source srcset="
+                                        ./images/tablet/team-4-768@1x.jpeg 1x,
+                                        ./images/tablet/team-4-768@2x.jpeg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                            <source srcset="
+                                        ./images/desktop/team-4-1200@1x.jpeg 1x,
+                                        ./images/desktop/team-4-1200@2x.jpeg 2x"
+                                    media="(min-width: 1200px)">
+
+                            <img src="./images/mobile/team-4-480@1x.jpeg"
+                                 alt="Дизайнер интерфейса"
+                                 width="270">
+                        </picture>
+
                         <h4 class="team__name">Михаил Ермаков</h4>
                         <p class="team__position">UI Designer</p>
                         <ul class="networks">
@@ -414,59 +524,60 @@
 
     <footer class="footer">
         <div class="container footer-box">
-            <div class="footer-address">
-                <a href="./index.html" class="logo logo-footer"><span class="logo-item">Web</span>Studio</a>
-                <address id="contact" class="office">
-                    <ul class="office__list">
-                        <li class="office__item">
-                            <a href="https://goo.gl/maps/67UM73fhqofaFtAK9" target="_blank" rel="noreferrer noopener" class="office__address">г.
-                                Киев, пр-т Леси Украинки, 26
+            <div class="tablet-box">
+                <div class="footer-address">
+                    <a href="./index.html" class="logo logo-footer"><span class="logo-item">Web</span>Studio</a>
+                    <address id="contact" class="office">
+                        <ul class="office__list">
+                            <li class="office__item">
+                                <a href="https://goo.gl/maps/67UM73fhqofaFtAK9" target="_blank" rel="noreferrer noopener" class="office__address">г.
+                                    Киев, пр-т Леси Украинки, 26
+                                </a>
+                            </li>
+                            <li class="office__item">
+                                <a href="mailto:info@example.com" class="office__link">info@example.com</a>
+                            </li>
+                            <li class="office__item">
+                                <a href="tel:+380991111111" class="office__link">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+
+                <div class="community">
+                    <h2 class="subscribe-title">Присоединяйтесь</h2>
+                    <ul class="networks">
+                        <li class="networks__item">
+                            <a href="https://www.instagram.com" target="_blank" rel="noreferrer noopener" class="networks__link footer-link">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#instagram"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="office__item">
-                            <a href="mailto:info@example.com" class="office__link">info@example.com</a>
+                        <li class="networks__item">
+                            <a href="https://twitter.com" target="_blank" rel="noreferrer noopener" class="networks__link footer-link">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#twitter"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="office__item">
-                            <a href="tel:+380991111111" class="office__link">+38 099 111 11 11</a>
+                        <li class="networks__item">
+                            <a href="https://m.facebook.com" target="_blank" rel="noreferrer noopener" class="networks__link footer-link">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="networks__item">
+                            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener" class="networks__link footer-link">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
+                </div>
             </div>
-
-            <div class="community">
-                <h2 class="subscribe-title">Присоединяйтесь</h2>
-                <ul class="networks">
-                    <li class="networks__item">
-                        <a href="https://www.instagram.com" target="_blank" rel="noreferrer noopener" class="networks__link footer-link">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="networks__item">
-                        <a href="https://twitter.com" target="_blank" rel="noreferrer noopener" class="networks__link footer-link">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="networks__item">
-                        <a href="https://m.facebook.com" target="_blank" rel="noreferrer noopener" class="networks__link footer-link">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="networks__item">
-                        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener" class="networks__link footer-link">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
 
             <div class="subscribe-box">
                 <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
@@ -483,6 +594,61 @@
             </div>
         </div>
     </footer>
+
+    <!--MOBILE MENU  -->
+    <div class="mob-menu is-hidden" data-menu>
+        <button class="mob-menu__btn"  data-menu-close>
+            <svg width="40" height="40">
+                <use href="./images/icons.svg#close"></use>
+            </svg>
+        </button>
+
+        <div>
+            <ul class="mob-nav">          
+                <li class="mob-nav__item">
+                    <a href="index.html" class="mob-nav__link mob-nav__link--current">Студия</a>
+                </li>
+                <li class="mob-nav__item">
+                    <a href="portfolio.html" class="mob-nav__link">Портфолио</a>
+                </li>
+                <li class="mob-nav__item">
+                    <a href="#contact" class="mob-nav__link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="mob-contacts">
+                <li class="mob-contacts__item">
+                    <a href="tel:+380961111111" class="mob-contacts__mail">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+                <li class="mob-contacts__item">
+                    <a href="mailto:info@devstudio.com" class="mob-contacts__phone">
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+        </div> 
+        <div>
+            <ul class="mob-link">
+                <li class="mob-link_item">
+                    <a href="Instagram">Instagram</a>
+                </li>
+                <li class="mob-link_item">
+                    <a href="Twitter">Twitter</a>
+                </li>
+                <li class="mob-link_item">
+                    <a href="Facebook">Facebook</a>
+                </li>
+                <li class="mob-link_item">
+                    <a href="LinkedIn">LinkedIn</a>
+                </li>
+            </ul>     
+        </div> 
+
+    </div>
+
     <script>
         const { height:pageHeaderHeight } = document
           .querySelector(".page-header")
@@ -492,6 +658,8 @@
     </script>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    
 
 </body>
 </html>

@@ -20,6 +20,10 @@ p {
 section {
   padding-top: 94px;
   padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  } 
 }
 
 ::placeholder {
@@ -27,4 +31,10 @@ section {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }

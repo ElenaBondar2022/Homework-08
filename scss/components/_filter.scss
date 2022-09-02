@@ -1,7 +1,27 @@
 .filter {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+} 
+
+.filter-item {
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-btn {
@@ -28,8 +48,4 @@
     background-color: var(--accent-color);
     color: var(--background-color);
 }
-}
-
-.filter-item:not(:last-child) {
-  margin-right: 8px;
 }
